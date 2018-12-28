@@ -1,4 +1,17 @@
 {
+    "centre": {
+        "lat": 52.00798, 
+        "lng": 4.37100, 
+        "zoom": 14
+    },
+    "continents": {
+        "TU Wijk": {"id": 0, "reward": 5},
+        "Wippolder": {"id": 1, "reward": 3},
+        "Oost": {"id": 2, "reward": 3},
+        "Centrum": {"id": 3, "reward": 4},
+        "Emerald": {"id": 4, "reward": 2}
+    },
+    "geoJSON":{
     "type": "FeatureCollection",
     "features": [
         {
@@ -37,17 +50,7 @@
             },
             "properties": {
                 "name": "Veldje",
-                "styleUrl": "#poly-558B2F-5101-77-nodesc",
-                "styleHash": "62ecc483",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5101-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5101-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -106,17 +109,7 @@
             },
             "properties": {
                 "name": "Machteld van meterenlaan",
-                "styleUrl": "#poly-558B2F-5001-77-nodesc",
-                "styleHash": "-691ebd7b",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5001-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5001-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -185,17 +178,7 @@
             },
             "properties": {
                 "name": "TU Noord",
-                "styleUrl": "#poly-558B2F-5201-77-nodesc",
-                "styleHash": "2ef84681",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5201-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5201-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -234,17 +217,7 @@
             },
             "properties": {
                 "name": "TU Zuid",
-                "styleUrl": "#poly-558B2F-5301-77-nodesc",
-                "styleHash": "-4fc3781",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5301-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5301-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -323,17 +296,7 @@
             },
             "properties": {
                 "name": "Botanische tuin",
-                "styleUrl": "#poly-558B2F-5101-77-nodesc",
-                "styleHash": "62ecc483",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5101-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5101-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -392,17 +355,7 @@
             },
             "properties": {
                 "name": "Techpark",
-                "styleUrl": "#poly-558B2F-4701-77-nodesc",
-                "styleHash": "-1151e869",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-4701-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-4701-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -486,17 +439,7 @@
             },
             "properties": {
                 "name": "7",
-                "styleUrl": "#poly-558B2F-5201-77-nodesc",
-                "styleHash": "2ef84681",
-                "styleMapHash": {
-                    "normal": "#poly-558B2F-5201-77-nodesc-normal",
-                    "highlight": "#poly-558B2F-5201-77-nodesc-highlight"
-                },
-                "stroke": "#558b2f",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#558b2f",
-                "fill-opacity": 0.30196078431372547
+                "continent": "TU Wijk"
             }
         },
         {
@@ -527,16 +470,7 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 5",
-                "styleUrl": "#line-000000-6813-nodesc",
-                "styleHash": "-47092da2",
-                "styleMapHash": {
-                    "normal": "#line-000000-6813-nodesc-normal",
-                    "highlight": "#line-000000-6813-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 5"
             }
         },
         {
@@ -557,16 +491,7 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 9",
-                "styleUrl": "#line-000000-7588-nodesc",
-                "styleHash": "297e9040",
-                "styleMapHash": {
-                    "normal": "#line-000000-7588-nodesc-normal",
-                    "highlight": "#line-000000-7588-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 9"
             }
         },
         {
@@ -587,16 +512,7 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 10",
-                "styleUrl": "#line-000000-7781-nodesc",
-                "styleHash": "-2c681220",
-                "styleMapHash": {
-                    "normal": "#line-000000-7781-nodesc-normal",
-                    "highlight": "#line-000000-7781-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 10"
             }
         },
         {
@@ -617,16 +533,7 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 11",
-                "styleUrl": "#line-000000-6813-nodesc",
-                "styleHash": "-47092da2",
-                "styleMapHash": {
-                    "normal": "#line-000000-6813-nodesc-normal",
-                    "highlight": "#line-000000-6813-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 11"
             }
         },
         {
@@ -715,17 +622,7 @@
             },
             "properties": {
                 "name": "Wippie noord",
-                "styleUrl": "#poly-A52714-5101-77-nodesc",
-                "styleHash": "308f187d",
-                "styleMapHash": {
-                    "normal": "#poly-A52714-5101-77-nodesc-normal",
-                    "highlight": "#poly-A52714-5101-77-nodesc-highlight"
-                },
-                "stroke": "#a52714",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#a52714",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Wippolder"
             }
         },
         {
@@ -769,17 +666,7 @@
             },
             "properties": {
                 "name": "sv Wippolder",
-                "styleUrl": "#poly-A52714-5101-77-nodesc",
-                "styleHash": "308f187d",
-                "styleMapHash": {
-                    "normal": "#poly-A52714-5101-77-nodesc-normal",
-                    "highlight": "#poly-A52714-5101-77-nodesc-highlight"
-                },
-                "stroke": "#a52714",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#a52714",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Wippolder"
             }
         },
         {
@@ -848,17 +735,7 @@
             },
             "properties": {
                 "name": "Wippie zuid",
-                "styleUrl": "#poly-A52714-5001-77-nodesc",
-                "styleHash": "6483967f",
-                "styleMapHash": {
-                    "normal": "#poly-A52714-5001-77-nodesc-normal",
-                    "highlight": "#poly-A52714-5001-77-nodesc-highlight"
-                },
-                "stroke": "#a52714",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#a52714",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Wippolder"
             }
         },
         {
@@ -917,17 +794,7 @@
             },
             "properties": {
                 "name": "PdH8",
-                "styleUrl": "#poly-01579B-4901-77-nodesc",
-                "styleHash": "-128afc43",
-                "styleMapHash": {
-                    "normal": "#poly-01579B-4901-77-nodesc-normal",
-                    "highlight": "#poly-01579B-4901-77-nodesc-highlight"
-                },
-                "stroke": "#01579b",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#01579b",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Oost"
             }
         },
         {
@@ -966,17 +833,7 @@
             },
             "properties": {
                 "name": "Bomenwijk",
-                "styleUrl": "#poly-01579B-5601-77-nodesc",
-                "styleHash": "-3a29c95d",
-                "styleMapHash": {
-                    "normal": "#poly-01579B-5601-77-nodesc-normal",
-                    "highlight": "#poly-01579B-5601-77-nodesc-highlight"
-                },
-                "stroke": "#01579b",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#01579b",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Oost"
             }
         },
         {
@@ -1040,17 +897,7 @@
             },
             "properties": {
                 "name": "Vrijenban",
-                "styleUrl": "#poly-01579B-4701-77-nodesc",
-                "styleHash": "555dffc1",
-                "styleMapHash": {
-                    "normal": "#poly-01579B-4701-77-nodesc-normal",
-                    "highlight": "#poly-01579B-4701-77-nodesc-highlight"
-                },
-                "stroke": "#01579b",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#01579b",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Oost"
             }
         },
         {
@@ -1119,17 +966,7 @@
             },
             "properties": {
                 "name": "IKEA",
-                "styleUrl": "#poly-01579B-4501-77-nodesc",
-                "styleHash": "-42b9043b",
-                "styleMapHash": {
-                    "normal": "#poly-01579B-4501-77-nodesc-normal",
-                    "highlight": "#poly-01579B-4501-77-nodesc-highlight"
-                },
-                "stroke": "#01579b",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#01579b",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Oost"
             }
         },
         {
@@ -1233,17 +1070,7 @@
             },
             "properties": {
                 "name": "Noord oost",
-                "styleUrl": "#poly-FFD600-4601-77-nodesc",
-                "styleHash": "-65e1588b",
-                "styleMapHash": {
-                    "normal": "#poly-FFD600-4601-77-nodesc-normal",
-                    "highlight": "#poly-FFD600-4601-77-nodesc-highlight"
-                },
-                "stroke": "#ffd600",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#ffd600",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Centrum"
             }
         },
         {
@@ -1264,16 +1091,7 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 2",
-                "styleUrl": "#line-000000-8363-nodesc",
-                "styleHash": "6dfa5a22",
-                "styleMapHash": {
-                    "normal": "#line-000000-8363-nodesc-normal",
-                    "highlight": "#line-000000-8363-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 2"
             }
         },
         {
@@ -1382,17 +1200,7 @@
             },
             "properties": {
                 "name": "Bastiaanplein",
-                "styleUrl": "#poly-FFD600-5001-77-nodesc",
-                "styleHash": "e5d5461",
-                "styleMapHash": {
-                    "normal": "#poly-FFD600-5001-77-nodesc-normal",
-                    "highlight": "#poly-FFD600-5001-77-nodesc-highlight"
-                },
-                "stroke": "#ffd600",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#ffd600",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Centrum"
             }
         },
         {
@@ -1461,17 +1269,7 @@
             },
             "properties": {
                 "name": "Oude kerk",
-                "styleUrl": "#poly-FFD600-4501-77-nodesc",
-                "styleHash": "-31ecda89",
-                "styleMapHash": {
-                    "normal": "#poly-FFD600-4501-77-nodesc-normal",
-                    "highlight": "#poly-FFD600-4501-77-nodesc-highlight"
-                },
-                "stroke": "#ffd600",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#ffd600",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Centrum"
             }
         },
         {
@@ -1575,17 +1373,7 @@
             },
             "properties": {
                 "name": "Station",
-                "styleUrl": "#poly-FFD600-4601-77-nodesc",
-                "styleHash": "-65e1588b",
-                "styleMapHash": {
-                    "normal": "#poly-FFD600-4601-77-nodesc-normal",
-                    "highlight": "#poly-FFD600-4601-77-nodesc-highlight"
-                },
-                "stroke": "#ffd600",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#ffd600",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Centrum"
             }
         },
         {
@@ -1659,17 +1447,7 @@
             },
             "properties": {
                 "name": "Buitenrand",
-                "styleUrl": "#poly-FFD600-4801-77-nodesc",
-                "styleHash": "3235ab71",
-                "styleMapHash": {
-                    "normal": "#poly-FFD600-4801-77-nodesc-normal",
-                    "highlight": "#poly-FFD600-4801-77-nodesc-highlight"
-                },
-                "stroke": "#ffd600",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#ffd600",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Centrum"
             }
         },
         {
@@ -1718,17 +1496,7 @@
             },
             "properties": {
                 "name": "Emerald noord",
-                "styleUrl": "#poly-673AB7-5401-77-nodesc",
-                "styleHash": "-7e1773d1",
-                "styleMapHash": {
-                    "normal": "#poly-673AB7-5401-77-nodesc-normal",
-                    "highlight": "#poly-673AB7-5401-77-nodesc-highlight"
-                },
-                "stroke": "#673ab7",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#673ab7",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Emerald"
             }
         },
         {
@@ -1777,17 +1545,7 @@
             },
             "properties": {
                 "name": "Emerald zuid",
-                "styleUrl": "#poly-673AB7-5601-77-nodesc",
-                "styleHash": "19ff902b",
-                "styleMapHash": {
-                    "normal": "#poly-673AB7-5601-77-nodesc-normal",
-                    "highlight": "#poly-673AB7-5601-77-nodesc-highlight"
-                },
-                "stroke": "#673ab7",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#673ab7",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Emerald"
             }
         },
         {
@@ -1826,17 +1584,7 @@
             },
             "properties": {
                 "name": "Delfgauw+",
-                "styleUrl": "#poly-673AB7-5901-77-nodesc",
-                "styleHash": "7e221625",
-                "styleMapHash": {
-                    "normal": "#poly-673AB7-5901-77-nodesc-normal",
-                    "highlight": "#poly-673AB7-5901-77-nodesc-highlight"
-                },
-                "stroke": "#673ab7",
-                "stroke-opacity": 1,
-                "stroke-width": 5,
-                "fill": "#673ab7",
-                "fill-opacity": 0.30196078431372547
+                "continent": "Emerald"
             }
         },
         {
@@ -1857,17 +1605,9 @@
                 ]
             },
             "properties": {
-                "name": "Lijn 2",
-                "styleUrl": "#line-000000-5650-nodesc",
-                "styleHash": "-71c2220c",
-                "styleMapHash": {
-                    "normal": "#line-000000-5650-nodesc-normal",
-                    "highlight": "#line-000000-5650-nodesc-highlight"
-                },
-                "stroke": "#000000",
-                "stroke-opacity": 1,
-                "stroke-width": 6.5
+                "name": "Lijn 2"
             }
         }
     ]
+    }
 }
