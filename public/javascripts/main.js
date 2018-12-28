@@ -31,17 +31,12 @@ function initMap() {
                     coord.push(LatLng);
                 });
                 const poly = new google.maps.Polygon({paths: coord});
-            
-                new google.maps.Marker({
-                    position: poly.getApproximateCenter(),
-                    map: map
-                });
+                
+                var bounds = new google.maps.LatLngBounds(
+                    poly.getApproximateCenter(),
+                    poly.getApproximateCenter());
+                overlay = new USGSOverlay(bounds, map);
             }
         });
-
-        var bounds = new google.maps.LatLngBounds(
-            new google.maps.LatLng(52.00798, 4.37100),
-            new google.maps.LatLng(52.00798, 4.37100));
-        overlay = new USGSOverlay(bounds, map);
     });
 }

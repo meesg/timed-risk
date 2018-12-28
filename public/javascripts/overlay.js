@@ -47,8 +47,8 @@ USGSOverlay.prototype.draw = function() {
 
     // Resize the image's div to fit the indicated dimensions.
     var div = this.div_;
-    div.style.left = sw.x + 'px';
-    div.style.top = ne.y + 'px';
+    div.style.left = (sw.x-25) + 'px';
+    div.style.top = (ne.y-25) + 'px';
     div.style.width = '35px';
     div.style.height = '35px';
     div.style.backgroundColor = 'white';
