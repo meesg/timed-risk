@@ -1,5 +1,3 @@
-console.log("here");
-
 function addApproximateCenterFunction(){
     google.maps.Polygon.prototype.getBoundingBox = function() {
         var bounds = new google.maps.LatLngBounds();
