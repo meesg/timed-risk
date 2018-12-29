@@ -1,3 +1,8 @@
+/* This function is ripped from : https://github.com/ModusCreateOrg/google-maps-polygon-center-approximation-blog
+   credits to Simon Prickett */
+
+/* TODO : Create a better center finding algorithm. */
+
 function addApproximateCenterFunction(){
     google.maps.Polygon.prototype.getBoundingBox = function() {
         var bounds = new google.maps.LatLngBounds();

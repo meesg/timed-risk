@@ -1,8 +1,12 @@
 {
     "centre": {
         "lat": 52.00798, 
-        "lng": 4.37100, 
-        "zoom": 14
+        "lng": 4.37100
+    },
+    "zoom": {
+        "standard": 14,            
+        "min": 14,
+        "max": 15
     },
     "continents": {
         "TU Wijk": {"id": 0, "reward": 5},
