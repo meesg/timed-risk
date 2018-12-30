@@ -1,7 +1,7 @@
 function setTimer(seconds){
-    let timeLeft = seconds
+    let timeLeft = seconds;
     
-    setInterval(function(){
+    let timeInterval = setInterval(function(){
         timeLeft--;
         
         let minutesLeft = Math.floor(timeLeft/60);
@@ -11,6 +11,10 @@ function setTimer(seconds){
         }
         if(secondsLeft < 10){
             secondsLeft = "0" + String(secondsLeft);
+        }
+
+        if(timeLeft === 0){
+            clearInterval(timeInterval);
         }
 
         $('#timer').html(minutesLeft + ":" + secondsLeft);
