@@ -6,7 +6,10 @@ function ArmiesOverlay(center, map) {
     this.center_ = center;
     this.map_ = map;
     this.div_ = null;
+
+    // Variables feede by Territory class.
     this.color = 'white'
+    this.armies = 1;
 
     // Explicitly call setMap on this overlay.
     this.setMap(map);
@@ -19,7 +22,7 @@ function ArmiesOverlay(center, map) {
 ArmiesOverlay.prototype.onAdd = function() {
     var div = document.createElement('div');
     div.id = "armiesOverlay"; 
-    div.innerHTML = "0";
+    div.innerHTML = "1";
     this.div_ = div;
 
     // Add the element to the "floatPane" pane.
@@ -34,6 +37,7 @@ ArmiesOverlay.prototype.draw = function() {
     this.div_.style.left = (pixelLocation.x-25) + 'px';
     this.div_.style.top = (pixelLocation.y-25) + 'px';
     this.div_.style['background-color'] = this.color;
+    this.div_.innerHTML = this.armies;
 };
 
 // The onRemove() method will be called automatically from the API if

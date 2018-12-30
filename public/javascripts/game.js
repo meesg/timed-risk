@@ -59,11 +59,17 @@ class Territory {
         this.continent = continent;
         this.overlay = overlay;
         this.owner = null;
+        this.armies = 1;
     }
 
     changeOwner(owner, color){
         this.owner = owner;
         this.overlay.color = color;
+    }
+
+    addArmies(amount){
+        this.armies += amount;
+        this.overlay.armies = this.armies;
     }
 }
 

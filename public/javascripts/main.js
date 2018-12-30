@@ -18,6 +18,14 @@ function initMap() {
             players.push(new Player("player " + i, playerColors[i]));
         }
         distributeTerritories(players);
+
+        map.data.addListener('click', function(event) {
+            if(event.feature.getProperty('type')=='territory'){
+                board.territories[event.feature.getProperty('name')].addArmies(1);
+                console.log(event.feature.getProperty('name'));
+                board.territories[event.feature.getProperty('name')].overlay.draw();
+            }
+        });
     });
 }
 
@@ -26,7 +34,10 @@ function createMap(data){
         zoom: data.zoom.standard,
         minZoom: data.zoom.min, 
         maxZoom: data.zoom.max,
-        center: {lat: data.centre.lat, lng: data.centre.lng}
+        center: {lat: data.centre.lat, lng: data.centre.lng},
+        streetViewControl: false,
+        setClickableIcons: false,
+        mapTypeControl: false,
     });
 
     map.data.addGeoJson(data.geoJSON);

@@ -53,6 +53,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Veldje",
                 "continent": "TU Wijk"
             }
@@ -112,6 +113,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Machteld van meterenlaan",
                 "continent": "TU Wijk"
             }
@@ -181,6 +183,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "TU Noord",
                 "continent": "TU Wijk"
             }
@@ -220,6 +223,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "TU Zuid",
                 "continent": "TU Wijk"
             }
@@ -299,6 +303,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Botanische tuin",
                 "continent": "TU Wijk"
             }
@@ -358,6 +363,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Techpark",
                 "continent": "TU Wijk"
             }
@@ -442,6 +448,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "7",
                 "continent": "TU Wijk"
             }
@@ -625,6 +632,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Wippie noord",
                 "continent": "Wippolder"
             }
@@ -669,6 +677,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "sv Wippolder",
                 "continent": "Wippolder"
             }
@@ -738,6 +747,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Wippie zuid",
                 "continent": "Wippolder"
             }
@@ -797,6 +807,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "PdH8",
                 "continent": "Oost"
             }
@@ -836,6 +847,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Bomenwijk",
                 "continent": "Oost"
             }
@@ -900,6 +912,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Vrijenban",
                 "continent": "Oost"
             }
@@ -969,6 +982,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "IKEA",
                 "continent": "Oost"
             }
@@ -1073,6 +1087,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Noord oost",
                 "continent": "Centrum"
             }
@@ -1203,6 +1218,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Bastiaanplein",
                 "continent": "Centrum"
             }
@@ -1272,6 +1288,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Oude kerk",
                 "continent": "Centrum"
             }
@@ -1376,6 +1393,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Station",
                 "continent": "Centrum"
             }
@@ -1450,6 +1468,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Buitenrand",
                 "continent": "Centrum"
             }
@@ -1499,6 +1518,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Emerald noord",
                 "continent": "Emerald"
             }
@@ -1548,6 +1568,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Emerald zuid",
                 "continent": "Emerald"
             }
@@ -1587,6 +1608,7 @@
                 ]
             },
             "properties": {
+                "type": "territory",
                 "name": "Delfgauw+",
                 "continent": "Emerald"
             }
