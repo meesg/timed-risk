@@ -9,11 +9,11 @@
         "max": 15
     },
     "continents": {
-        "TU Wijk": {"id": 0, "reward": 5},
-        "Wippolder": {"id": 1, "reward": 3},
-        "Oost": {"id": 2, "reward": 3},
-        "Centrum": {"id": 3, "reward": 4},
-        "Emerald": {"id": 4, "reward": 2}
+        "TU Wijk": {"id" : 0, "name": "TU Wijk", "reward": 5},
+        "Wippolder": {"id" : 1, "name": "Wippolder", "reward": 3},
+        "Oost": {"id" : 2, "name": "Oost", "reward": 3},
+        "Centrum": {"id" : 3, "name": "Centrum", "reward": 4},
+        "Emerald": {"id" : 4, "name": "Emerald", "reward": 2}
     },
     "geoJSON":{
     "type": "FeatureCollection",

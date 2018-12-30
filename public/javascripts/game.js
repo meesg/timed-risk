@@ -1,8 +1,8 @@
-/** @constructor */
 class Game {
     constructor(board, players) {
         this.board = board;
         this.players = players;
+        this.turn = new Turn();
     }
 }
 
@@ -11,7 +11,7 @@ class Turn {
         this._nPlayers = nPlayers;
         this.count = 0;
         this.player = 0;
-        this.countriesConquered = 0;
+        this.territoriesConquered = 0;
         this.step = "PLACING"
     }
 
@@ -27,9 +27,42 @@ class Turn {
     updateTurn(){
         this.count++;
         this.player = this.nextPlayer;
-        this.countriesConquered = 0;
+        this.territoriesConquered = 0;
         this.step = "PLACING";
     }
 }
 
-let game = new Game(0, 0);
+class Board {
+    constructor(continents, territories){
+        this.continents = continents;
+        this.territories = territories;
+        this.nTerritories = territories.length;
+    }
+}
+
+class Continent {
+    constructor(name, reward){
+        this.name = name;
+        this.territoryNames = [];
+        this.reward = reward;
+        this.owner = null;
+    }
+
+    addTerritoryName(t){
+        this.territoryNames.push(t);
+    }
+}
+
+class Territory {
+    constructor(name, continent, overlay){
+        this.name = name;
+        this.continent = continent;
+        this.overlay = overlay;
+        this.owner = null;
+    }
+
+    changeOwner(owner, color){
+        this.owner = owner;
+        this.overlay.color = color;
+    }
+}

@@ -1,4 +1,3 @@
-let armiesOverlay = [];
 ArmiesOverlay.prototype = new google.maps.OverlayView();
 
 /** @constructor */
@@ -7,6 +6,7 @@ function ArmiesOverlay(center, map) {
     this.center_ = center;
     this.map_ = map;
     this.div_ = null;
+    this.color = 'white'
 
     // Explicitly call setMap on this overlay.
     this.setMap(map);
@@ -33,6 +33,7 @@ ArmiesOverlay.prototype.draw = function() {
     var pixelLocation = overlayProjection.fromLatLngToDivPixel(this.center_);
     this.div_.style.left = (pixelLocation.x-25) + 'px';
     this.div_.style.top = (pixelLocation.y-25) + 'px';
+    this.div_.style['background-color'] = this.color;
 };
 
 // The onRemove() method will be called automatically from the API if

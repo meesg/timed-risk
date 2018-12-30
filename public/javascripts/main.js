@@ -1,4 +1,5 @@
 let colors = ['#558b2f', '#a52714', '#01579b', '#ffd600', '#673ab7'];
+let playerColors = ['#b9ff59', '#59b9ff', '#ff8a59'];
 const mapPath = "maps/Delft.json";
 
 let map;
@@ -8,7 +9,10 @@ function initMap() {
     $.getJSON(mapPath, function(data) { 
         createMap(data);
         styleMap(data);
-        createArmiesOverlays();
+
+        const armiesOverlay = createArmiesOverlays();
+        board = buildBoard(data.continents, armiesOverlay);
+        distributeTerritories();
     });
 }
 
@@ -38,7 +42,11 @@ function styleMap(data){
     });
 }
 
+
+/** Creates the overlays for the armies number for each territory and returns them. */
 function createArmiesOverlays(){
+    let armiesOverlay = [];
+
     map.data.forEach(function(feature){
         if(feature.getGeometry().getType()=='Polygon'){
             let coord = [];
@@ -48,7 +56,45 @@ function createArmiesOverlays(){
             const poly = new google.maps.Polygon({paths: coord});
             const center = poly.getApproximateCenter();
 
-            armiesOverlay.push(new ArmiesOverlay(center, map));
+            armiesOverlay[feature.getProperty('name')] = new ArmiesOverlay(center, map);
         }
     });
+
+    return armiesOverlay;
+}
+
+function buildBoard(continentsData, armiesOverlay){
+    let continents = [];
+    let territories = [];
+
+    for (let continentKey in continentsData) {
+        if (!continentsData.hasOwnProperty(continentKey)) continue; // skip loop if the property is from prototype
+        
+        const continent = continentsData[continentKey];
+        continents[continent.name] = new Continent(continent.name, continent.reward);
+    }
+    
+    map.data.forEach(function(feature){
+        const continentName = feature.getProperty('continent');
+        if(typeof continentName === 'undefined') return; // skip if the feature isn't a terrirory (non territories don't have continent property)
+
+        const territoryName = feature.getProperty('name');
+        const overlay = armiesOverlay[territoryName];
+
+        territories[territoryName] = new Territory(territoryName, continentName, overlay);
+        continents[continentName].addTerritoryName(territoryName);
+    });
+
+    return new Board(continents, territories);
+}
+
+function distributeTerritories(){
+    let ter = Object.keys(board.territories);
+
+    for(let i = 0; ter.length > 0; i++){
+        const rand = Math.floor(Math.random()*ter.length);
+        const turn = i % 3;
+        board.territories[ter[rand]].changeOwner("Mees", playerColors[turn]);
+        ter.splice(rand,1);
+    }
 }
