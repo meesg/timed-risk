@@ -7,7 +7,7 @@ function ArmiesOverlay(center, map) {
     this.map_ = map;
     this.div_ = null;
 
-    // Variables feede by Territory class.
+    // Variables feeded by Territory class.
     this.color = 'white'
     this.armies = 1;
 
@@ -46,5 +46,3 @@ ArmiesOverlay.prototype.onRemove = function() {
     this.div_.parentNode.removeChild(this.div_);
     this.div_ = null;
 };
-
-google.maps.event.addDomListener(window, 'load', initMap);

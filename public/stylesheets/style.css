@@ -22,3 +22,24 @@ html, body {
   line-height:35px;
   font-size:16px;
 }
+
+#timer{
+  background: none rgb(255, 255, 255); 
+  border: 0px; 
+  margin: auto; 
+  padding: 10px; 
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  cursor: pointer; 
+  user-select: none; 
+  border-radius: 2px; 
+  height: 40px; 
+  width: 150px; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; 
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px; 
+  font-family:Lucida Console; 
+  font-size:32px;
+}
