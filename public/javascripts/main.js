@@ -12,7 +12,12 @@ function initMap() {
 
         const armiesOverlay = createArmiesOverlays();
         board = buildBoard(data.continents, armiesOverlay);
-        distributeTerritories();
+
+        let players = [];
+        for(let i = 0; i < 3; i++){
+            players.push(new Player("player " + i, playerColors[i]));
+        }
+        distributeTerritories(players);
     });
 }
 
@@ -88,13 +93,21 @@ function buildBoard(continentsData, armiesOverlay){
     return new Board(continents, territories);
 }
 
-function distributeTerritories(){
+function distributeTerritories(players){
     let ter = Object.keys(board.territories);
 
     for(let i = 0; ter.length > 0; i++){
+        //Choose random territory
         const rand = Math.floor(Math.random()*ter.length);
-        const turn = i % 3;
-        board.territories[ter[rand]].changeOwner("Mees", playerColors[turn]);
+        const chosenTer = ter[rand];
+
+        //Check who's turn it is
+        const turn = i % players.length;
+        const p = players[turn];
+
+        board.territories[chosenTer].changeOwner(p.name, p.color);
+
+        //Remove drawn territory
         ter.splice(rand,1);
     }
 }
