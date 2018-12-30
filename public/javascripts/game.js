@@ -74,8 +74,9 @@ class Territory {
 }
 
 class Player {
-    constructor(name, color){
+    constructor(name, color, availableArmies){
         this.name = name;
         this.color = color;
+        this.availableArmies = availableArmies;
     }
 }

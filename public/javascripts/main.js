@@ -13,17 +13,24 @@ function initMap() {
         const armiesOverlay = createArmiesOverlays();
         board = buildBoard(data.continents, armiesOverlay);
 
-        let players = [];
+        players = [];
         for(let i = 0; i < 3; i++){
             players.push(new Player("player " + i, playerColors[i]));
         }
         distributeTerritories(players);
 
+        game = createGame(board, players);
+
         map.data.addListener('click', function(event) {
             if(event.feature.getProperty('type')=='territory'){
-                board.territories[event.feature.getProperty('name')].addArmies(1);
-                console.log(event.feature.getProperty('name'));
-                board.territories[event.feature.getProperty('name')].overlay.draw();
+                let ter = board.territories[event.feature.getProperty('name')];
+                let owner = ter.owner;
+                console.log(owner);
+                if(players[owner].availableArmies > 0){
+                    ter.addArmies(1);
+                    ter.overlay.draw();
+                    players[owner].availableArmies--;
+                }
             }
         });
     });
@@ -116,9 +123,16 @@ function distributeTerritories(players){
         const turn = i % players.length;
         const p = players[turn];
 
-        board.territories[chosenTer].changeOwner(p.name, p.color);
+        board.territories[chosenTer].changeOwner(turn, p.color);
 
         //Remove drawn territory
         ter.splice(rand,1);
     }
+}
+
+function createGame(board, players){
+    players.forEach(function(player){
+        player.availableArmies = 3;
+    })
+    return new Game(board, players);
 }
