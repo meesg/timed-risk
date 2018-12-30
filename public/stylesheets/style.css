@@ -11,7 +11,15 @@ html, body {
   height: 100%;
 }
 
-#armiesOverlay{
+#overlayContainer {
+  position: absolute; 
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#armiesOverlay {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -23,23 +31,39 @@ html, body {
   font-size:16px;
 }
 
-#timer{
+.overlayItem {
   background: none rgb(255, 255, 255); 
   border: 0px; 
-  margin: auto; 
   padding: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; 
+  user-select: none; 
+  border-radius: 2px; 
+  overflow: hidden;
+}
+
+#timer {
   position: absolute; 
   top: 10px;
   left: 10px;
-  cursor: pointer; 
-  user-select: none; 
-  border-radius: 2px; 
   height: 40px; 
   width: 150px; 
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; 
-  overflow: hidden;
   text-align: center;
   line-height: 40px; 
   font-family:Lucida Console; 
+  font-size:32px;
+}
+
+#territoryName {
+  position: absolute;
+  top: 10px;
+  left: 0px; 
+  right: 0px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 450px; /* Need a specific value to work */
+  height: 40px;
+  line-height: 40px; 
+  font-family:Verdana; 
+  text-align: center;
   font-size:32px;
 }

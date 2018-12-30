@@ -21,14 +21,19 @@ function initMap() {
 
         game = createGame(board, players);
 
+        map.data.addListener('mouseover', function(event) {
+            if(event.feature.getProperty('type')=='territory'){
+                $('#territoryName').html(event.feature.getProperty('name'));
+            }
+        });
+        
         map.data.addListener('click', function(event) {
             if(event.feature.getProperty('type')=='territory'){
                 let ter = board.territories[event.feature.getProperty('name')];
                 let owner = ter.owner;
-                console.log(owner);
+
                 if(players[owner].availableArmies > 0){
                     ter.addArmies(1);
-                    ter.overlay.draw();
                     players[owner].availableArmies--;
                 }
             }

@@ -70,6 +70,9 @@ class Territory {
     addArmies(amount){
         this.armies += amount;
         this.overlay.armies = this.armies;
+        if(typeof this.overlay.div_ !== undefined){
+            this.overlay.draw();
+        }
     }
 }
 

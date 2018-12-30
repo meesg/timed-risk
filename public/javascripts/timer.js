@@ -1,7 +1,10 @@
+let timeInterval;
+
 function setTimer(seconds){
+    clearInterval(timeInterval);
     let timeLeft = seconds;
     
-    let timeInterval = setInterval(function(){
+    timeInterval = setInterval(function(){
         timeLeft--;
         
         let minutesLeft = Math.floor(timeLeft/60);
